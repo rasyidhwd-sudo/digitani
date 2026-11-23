@@ -1,0 +1,82 @@
+[
+  {
+    "q": "Mengapa daun padi saya menguning?",
+    "expected": "padi-menguning"
+  },
+  {
+    "q": "Bagaimana cara mengatasi hama pada tanaman cabai?",
+    "expected": "hama-cabai"
+  },
+  {
+    "q": "Apa rekomendasi pemupukan untuk jagung?",
+    "expected": "pupuk-jagung"
+  },
+  {
+    "q": "Bagaimana menentukan jadwal irigasi yang tepat?",
+    "expected": "jadwal-irigasi"
+  },
+  {
+    "q": "Cabai saya busuk saat musim hujan, kenapa?",
+    "expected": "cabai-musim-hujan"
+  },
+  {
+    "q": "Bagaimana cara memperbaiki tanah dengan kompos?",
+    "expected": "bahan-organik"
+  },
+  {
+    "q": "Tikus merusak sawah saya, apa yang harus dilakukan?",
+    "expected": "hama-tikus-sawah"
+  },
+  {
+    "q": "Padi saya kena blas, bercaknya seperti belah ketupat",
+    "expected": "blas-padi"
+  },
+  {
+    "q": "Daun jagung bolong dimakan ulat grayak",
+    "expected": "ulat-grayak-jagung"
+  },
+  {
+    "q": "Apakah tanah saya terlalu masam dan perlu kapur?",
+    "expected": "ph-tanah-pengapuran"
+  },
+  {
+    "q": "Buah tomat saya busuk di ujung bawah",
+    "expected": "tomat-busuk-ujung"
+  },
+  {
+    "q": "Kenapa perlu rotasi tanaman setelah padi?",
+    "expected": "rotasi-tanaman"
+  },
+  {
+    "q": "Bagaimana memilih benih yang bagus?",
+    "expected": "benih-seleksi"
+  },
+  {
+    "q": "Kapan waktu panen padi yang tepat?",
+    "expected": "panen-padi"
+  },
+  {
+    "q": "Gulma banyak sekali di kebun sayur, bagaimana mengendalikannya?",
+    "expected": "mulsa-gulma"
+  },
+  {
+    "q": "Kutu daun menyerang cabai saya",
+    "expected": "hama-cabai"
+  },
+  {
+    "q": "Berapa kali sebaiknya menyiram tanaman di musim kemarau?",
+    "expected": "jadwal-irigasi"
+  },
+  {
+    "q": "Pemupukan susulan jagung kapan dilakukan?",
+    "expected": "pupuk-jagung"
+  },
+  {
+    "q": "Berapa dosis pestisida untuk ulat grayak?",
+    "expected": "ulat-grayak-jagung"
+  },
+  {
+    "q": "Bagaimana cara membuat mobil listrik?",
+    "expected": "umum"
+  }
+]

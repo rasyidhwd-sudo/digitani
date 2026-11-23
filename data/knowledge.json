@@ -1,0 +1,478 @@
+[
+  {
+    "id": "padi-menguning",
+    "title": "Mengenali penyebab daun padi menguning",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "padi",
+      "menguning"
+    ],
+    "summary": "Daun padi yang menguning bisa disebabkan beberapa hal sekaligus, jadi belum bisa dipastikan satu penyebab saja dari informasi yang ada.",
+    "label": "Kemungkinan penyebab",
+    "points": [
+      "Kekurangan unsur hara, terutama nitrogen, yang biasanya terlihat dulu pada daun tua",
+      "Pengelolaan air: petak terlalu tergenang atau terlalu kering",
+      "Kemungkinan penyakit atau serangan hama, terutama bila ada bercak atau pola khusus"
+    ],
+    "actions": [
+      "Amati polanya: menguning merata, dari ujung daun, atau berbercak",
+      "Periksa genangan air dan drainase petak",
+      "Catat umur tanaman dan jadwal pemupukan terakhir"
+    ],
+    "cautions": [
+      "Jangan langsung menambah pupuk atau pestisida sebelum penyebabnya jelas",
+      "Foto gejala untuk ditunjukkan ke penyuluh setempat"
+    ],
+    "refs": [
+      "Buku Budidaya Tanaman Padi (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)",
+      "Panduan Pengelolaan Tanaman Terpadu (contoh referensi)"
+    ],
+    "body": "Daun menguning adalah gejala, bukan diagnosis. Mulailah dengan mengamati pola gejala dan kondisi petak sebelum mengambil tindakan."
+  },
+  {
+    "id": "hama-cabai",
+    "title": "Dasar pengendalian hama pada cabai",
+    "category": "Hama dan Penyakit",
+    "keywords": [
+      "cabai",
+      "cabe",
+      "hama",
+      "ulat",
+      "kutu",
+      "penyakit"
+    ],
+    "summary": "Tanaman cabai sering diganggu hama kecil, dan pengendalian paling efektif dimulai dari pemantauan rutin sebelum serangan meluas.",
+    "label": "Hama yang umum ditemui",
+    "points": [
+      "Kutu daun dan thrips yang membuat daun keriting",
+      "Lalat buah yang merusak buah muda",
+      "Penyakit tanaman yang gejalanya mirip serangan hama"
+    ],
+    "actions": [
+      "Periksa bagian bawah daun dan pucuk secara rutin",
+      "Buang bagian tanaman yang terserang dan jaga kebersihan lahan",
+      "Gunakan perangkap perekat kuning sebagai pemantau"
+    ],
+    "cautions": [
+      "Pilih cara paling ringan dulu sebelum bahan kimia",
+      "Konsultasikan pilihan pengendalian dengan penyuluh"
+    ],
+    "refs": [
+      "Panduan Pengendalian Hama Terpadu (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Pengendalian hama terpadu memadukan pemantauan, kebersihan lahan, rotasi, dan pengendalian hayati, serta menempatkan bahan kimia sebagai pilihan terakhir."
+  },
+  {
+    "id": "pupuk-jagung",
+    "title": "Prinsip pemupukan jagung",
+    "category": "Pemupukan",
+    "keywords": [
+      "jagung",
+      "pupuk",
+      "pemupukan",
+      "mupuk",
+      "urea",
+      "npk"
+    ],
+    "summary": "Pemupukan jagung umumnya dibagi menjadi pupuk dasar dan pupuk susulan, dan kebutuhan pastinya bergantung pada kondisi tanah serta varietas.",
+    "label": "Prinsip pemupukan",
+    "points": [
+      "Pupuk dasar diberikan saat tanam, susulan saat fase pertumbuhan aktif",
+      "Kebutuhan nitrogen, fosfor, dan kalium berbeda di tiap lahan",
+      "Uji tanah membantu menghindari pemupukan berlebih"
+    ],
+    "actions": [
+      "Lakukan uji tanah atau tanyakan rekomendasi setempat",
+      "Bagi pemberian pupuk sesuai fase tumbuh",
+      "Beri pupuk di sekitar barisan tanaman, bukan menumpuk di satu titik"
+    ],
+    "cautions": [
+      "Prototipe ini tidak memberikan angka dosis",
+      "Hindari pemupukan saat tanah terlalu kering"
+    ],
+    "refs": [
+      "Jurnal Ilmu Pertanian (contoh referensi)",
+      "Panduan Pemupukan Tanaman Pangan (contoh referensi)"
+    ],
+    "body": "Uji tanah memberi gambaran kandungan hara dan keasaman, sehingga pemupukan lebih tepat sasaran dan hemat biaya."
+  },
+  {
+    "id": "jadwal-irigasi",
+    "title": "Mengatur jadwal irigasi",
+    "category": "Irigasi",
+    "keywords": [
+      "irigasi",
+      "siram",
+      "nyiram",
+      "penyiraman",
+      "kemarau",
+      "jadwal",
+      "pengairan"
+    ],
+    "summary": "Jadwal irigasi yang tepat bergantung pada jenis tanah, fase tumbuh tanaman, dan cuaca, sehingga tidak ada satu jadwal yang cocok untuk semua lahan.",
+    "label": "Hal yang memengaruhi jadwal",
+    "points": [
+      "Tanah berpasir cepat kering, tanah liat menahan air lebih lama",
+      "Fase pembungaan dan pengisian biasanya paling peka terhadap kekurangan air",
+      "Curah hujan dan suhu harian"
+    ],
+    "actions": [
+      "Cek kelembapan dengan menusukkan jari beberapa sentimeter ke tanah",
+      "Siram pagi atau sore hari",
+      "Catat pola hujan dan jadwal siram selama beberapa minggu"
+    ],
+    "cautions": [
+      "Genangan berlebih juga bisa merusak akar",
+      "Sesuaikan dengan sumber air yang tersedia"
+    ],
+    "refs": [
+      "Panduan Pengelolaan Tanaman Terpadu (contoh referensi)",
+      "Panduan Irigasi Lahan Kering (contoh referensi)"
+    ],
+    "body": "Kebutuhan air berubah sepanjang siklus tanam. Pantau kelembapan tanah dan sesuaikan dengan cuaca."
+  },
+  {
+    "id": "cabai-musim-hujan",
+    "title": "Budidaya cabai di musim hujan",
+    "category": "Hortikultura",
+    "keywords": [
+      "musim hujan",
+      "hujan",
+      "sayuran"
+    ],
+    "summary": "Kelembapan tinggi di musim hujan memudahkan penyakit berkembang pada tanaman hortikultura, sehingga drainase dan sirkulasi udara jadi kunci.",
+    "label": "Hal yang perlu dijaga",
+    "points": [
+      "Drainase bedengan agar air tidak menggenang",
+      "Jarak tanam yang cukup untuk sirkulasi udara",
+      "Kelembapan daun yang tinggi memicu jamur"
+    ],
+    "actions": [
+      "Buat bedengan lebih tinggi dan parit pembuangan",
+      "Pangkas daun bawah yang rimbun",
+      "Pantau gejala bercak sejak dini"
+    ],
+    "cautions": [
+      "Jangan menyiram berlebihan saat hujan rutin",
+      "Tanyakan penyuluh sebelum memakai fungisida"
+    ],
+    "refs": [
+      "Jurnal Ilmu Pertanian (contoh referensi)",
+      "Panduan Budidaya Hortikultura (contoh referensi)"
+    ],
+    "body": "Perhatikan drainase, jarak tanam, dan sirkulasi udara untuk menekan penyakit di musim hujan."
+  },
+  {
+    "id": "bahan-organik",
+    "title": "Menjaga kesehatan tanah dengan bahan organik",
+    "category": "Kesehatan Tanah",
+    "keywords": [
+      "tanah",
+      "organik",
+      "kompos"
+    ],
+    "summary": "Bahan organik memperbaiki struktur tanah, daya simpan air, dan kehidupan mikroba, sehingga tanah lebih sehat dalam jangka panjang.",
+    "label": "Manfaat bahan organik",
+    "points": [
+      "Memperbaiki struktur tanah yang padat atau terlalu berpasir",
+      "Meningkatkan daya simpan air dan hara",
+      "Mendukung kehidupan mikroba tanah"
+    ],
+    "actions": [
+      "Kembalikan jerami atau sisa tanaman ke lahan",
+      "Gunakan kompos matang",
+      "Lakukan uji tanah secara berkala"
+    ],
+    "cautions": [
+      "Gunakan kompos yang sudah matang agar tidak membawa penyakit",
+      "Manfaatnya terlihat bertahap, bukan instan"
+    ],
+    "refs": [
+      "Panduan Kesehatan Tanah (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Bahan organik adalah investasi jangka panjang untuk kesuburan dan ketahanan lahan."
+  },
+  {
+    "id": "hama-tikus-sawah",
+    "title": "Mengendalikan tikus di sawah",
+    "category": "Hama dan Penyakit",
+    "keywords": [
+      "tikus"
+    ],
+    "summary": "Pengendalian tikus paling efektif bila dilakukan terpadu dan serentak oleh banyak petani di satu hamparan, bukan sendiri-sendiri.",
+    "label": "Hal yang perlu dipahami",
+    "points": [
+      "Tikus berkembang cepat bila makanan dan tempat bersembunyi tersedia",
+      "Kerusakan bisa terjadi sejak persemaian sampai menjelang panen",
+      "Semak dan pematang yang rimbun jadi tempat bersarang"
+    ],
+    "actions": [
+      "Bersihkan semak dan rapikan pematang",
+      "Lakukan gropyokan bersama kelompok tani",
+      "Pantau jejak dan lubang aktif secara rutin"
+    ],
+    "cautions": [
+      "Hindari memakai racun sembarangan karena bisa membahayakan ternak, burung pemangsa, dan manusia",
+      "Konsultasikan cara pengendalian dengan penyuluh setempat"
+    ],
+    "refs": [
+      "Panduan Pengendalian Hama Terpadu (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Pengendalian tikus terpadu menggabungkan sanitasi, gotong royong, dan pemantauan."
+  },
+  {
+    "id": "blas-padi",
+    "title": "Mengenali penyakit blas pada padi",
+    "category": "Hama dan Penyakit",
+    "keywords": [
+      "blas",
+      "padi",
+      "belah ketupat"
+    ],
+    "summary": "Blas adalah penyakit jamur pada padi yang sering ditandai bercak berbentuk belah ketupat pada daun dan bisa menyerang leher malai.",
+    "label": "Hal yang memicu dan perlu diperhatikan",
+    "points": [
+      "Bercak pada daun biasanya berbentuk belah ketupat dengan tepi kecoklatan",
+      "Kondisi lembab dan pemupukan nitrogen berlebihan dapat memicu penyakit",
+      "Gejalanya bisa mirip penyakit lain"
+    ],
+    "actions": [
+      "Pilih varietas yang tahan di musim berikutnya",
+      "Atur pemupukan nitrogen agar tidak berlebihan",
+      "Tanam serempak dan jaga kebersihan lahan"
+    ],
+    "cautions": [
+      "Pastikan penyakitnya dulu ke penyuluh sebelum memakai fungisida",
+      "Prototipe ini tidak memberikan angka dosis"
+    ],
+    "refs": [
+      "Buku Budidaya Tanaman Padi (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Pencegahan lewat varietas tahan dan pemupukan seimbang lebih dianjurkan daripada mengandalkan penyemprotan."
+  },
+  {
+    "id": "ulat-grayak-jagung",
+    "title": "Ulat grayak pada jagung",
+    "category": "Hama dan Penyakit",
+    "keywords": [
+      "ulat grayak",
+      "grayak",
+      "jagung"
+    ],
+    "summary": "Ulat grayak memakan daun jagung dan dapat merusak titik tumbuh, sehingga pemantauan sejak tanaman muda sangat penting.",
+    "label": "Tanda dan hal yang perlu diperhatikan",
+    "points": [
+      "Daun tampak berlubang atau tercabik, sering disertai kotoran ulat",
+      "Serangan awal sering terlihat di bagian pucuk atau lipatan daun",
+      "Ulat aktif terutama pada sore sampai malam"
+    ],
+    "actions": [
+      "Periksa pucuk dan lipatan daun secara rutin",
+      "Kumpulkan dan musnahkan kelompok telur atau ulat yang ditemukan",
+      "Jaga musuh alami dan rotasikan tanaman"
+    ],
+    "cautions": [
+      "Gunakan bahan kimia sebagai pilihan terakhir dan sesuai anjuran",
+      "Prototipe ini tidak memberikan angka dosis"
+    ],
+    "refs": [
+      "Panduan Pengendalian Hama Terpadu (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Pemantauan dini dan pengendalian non-kimia lebih dulu membantu menekan serangan."
+  },
+  {
+    "id": "ph-tanah-pengapuran",
+    "title": "Keasaman tanah dan pengapuran",
+    "category": "Kesehatan Tanah",
+    "keywords": [
+      "ph tanah",
+      "keasaman",
+      "masam",
+      "asam",
+      "kapur",
+      "pengapuran"
+    ],
+    "summary": "Tanah yang terlalu masam dapat menghambat serapan hara, dan pengapuran sebaiknya didasarkan pada hasil uji tanah.",
+    "label": "Hal yang perlu dipahami",
+    "points": [
+      "Keasaman tanah memengaruhi ketersediaan hara bagi tanaman",
+      "Kapur bereaksi lambat sehingga hasilnya tidak instan",
+      "Kebutuhan kapur berbeda tiap lahan"
+    ],
+    "actions": [
+      "Lakukan uji tanah untuk mengetahui tingkat keasaman",
+      "Berikan kapur sesuai rekomendasi hasil uji",
+      "Campurkan kapur merata dengan tanah"
+    ],
+    "cautions": [
+      "Pengapuran tanpa uji tanah bisa berlebihan",
+      "Prototipe ini tidak memberikan angka takaran"
+    ],
+    "refs": [
+      "Panduan Kesehatan Tanah (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Uji tanah adalah dasar pemberian kapur yang tepat."
+  },
+  {
+    "id": "tomat-busuk-ujung",
+    "title": "Buah tomat busuk di ujung bawah",
+    "category": "Hortikultura",
+    "keywords": [
+      "tomat",
+      "busuk ujung",
+      "ujung buah",
+      "kalsium"
+    ],
+    "summary": "Busuk di ujung bawah buah tomat umumnya berkaitan dengan kalsium yang tidak cukup sampai ke buah, sering karena penyiraman tidak konsisten.",
+    "label": "Kemungkinan penyebab",
+    "points": [
+      "Penyiraman yang tidak teratur mengganggu penyerapan kalsium",
+      "Kelebihan nitrogen dapat memperparah",
+      "Umumnya bukan karena jamur atau bakteri"
+    ],
+    "actions": [
+      "Jaga kelembapan tanah tetap stabil",
+      "Gunakan mulsa untuk menahan air",
+      "Lakukan uji tanah sebelum menambah kalsium"
+    ],
+    "cautions": [
+      "Buah yang sudah busuk tidak bisa pulih, fokus pada buah berikutnya",
+      "Jangan menambah pupuk berlebihan tanpa uji tanah"
+    ],
+    "refs": [
+      "Panduan Budidaya Hortikultura (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Konsistensi penyiraman menjadi kunci pencegahan."
+  },
+  {
+    "id": "rotasi-tanaman",
+    "title": "Manfaat rotasi tanaman",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "rotasi",
+      "pergiliran"
+    ],
+    "summary": "Rotasi tanaman membantu memutus siklus hama dan penyakit serta menjaga kesuburan tanah dari musim ke musim.",
+    "label": "Manfaat rotasi",
+    "points": [
+      "Memutus siklus hama dan penyakit yang bergantung pada satu jenis tanaman",
+      "Membantu menjaga kesuburan dan struktur tanah",
+      "Mengurangi ketergantungan pada satu komoditas"
+    ],
+    "actions": [
+      "Catat riwayat tanam di tiap petak",
+      "Pilih tanaman dari kelompok yang berbeda secara bergantian",
+      "Sesuaikan dengan ketersediaan air dan pasar"
+    ],
+    "cautions": [
+      "Rencana rotasi perlu disesuaikan kondisi setempat",
+      "Tanyakan penyuluh untuk pola tanam yang cocok di wilayah Anda"
+    ],
+    "refs": [
+      "Panduan Pengelolaan Tanaman Terpadu (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Pola tanam yang bervariasi membuat lahan lebih tahan terhadap gangguan."
+  },
+  {
+    "id": "benih-seleksi",
+    "title": "Memilih dan menyiapkan benih",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "benih",
+      "bibit",
+      "persemaian"
+    ],
+    "summary": "Benih bermutu sangat menentukan hasil, sehingga pemilihan dan penyimpanan benih perlu diperhatikan sejak awal.",
+    "label": "Hal yang perlu diperhatikan",
+    "points": [
+      "Benih yang sehat dan seragam tumbuh lebih baik",
+      "Varietas perlu sesuai kondisi lahan dan musim",
+      "Benih yang lembap mudah rusak saat disimpan"
+    ],
+    "actions": [
+      "Pilih benih bersertifikat bila tersedia",
+      "Lakukan uji daya tumbuh sederhana sebelum tanam",
+      "Simpan benih di tempat kering dan sejuk"
+    ],
+    "cautions": [
+      "Jangan memakai benih dari tanaman yang terserang penyakit",
+      "Sesuaikan varietas dengan anjuran setempat"
+    ],
+    "refs": [
+      "Panduan Pengelolaan Tanaman Terpadu (contoh referensi)",
+      "Jurnal Ilmu Pertanian (contoh referensi)"
+    ],
+    "body": "Benih yang baik adalah modal awal produktivitas."
+  },
+  {
+    "id": "panen-padi",
+    "title": "Waktu panen padi yang tepat",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "panen",
+      "pascapanen",
+      "gabah"
+    ],
+    "summary": "Panen pada waktu yang tepat dan pengeringan yang baik membantu mengurangi kehilangan hasil dan menjaga mutu gabah.",
+    "label": "Hal yang perlu diperhatikan",
+    "points": [
+      "Panen terlalu cepat atau terlambat menurunkan hasil dan mutu",
+      "Tanda umum: sebagian besar bulir pada malai sudah menguning",
+      "Gabah basah mudah rusak bila ditunda pengeringannya"
+    ],
+    "actions": [
+      "Amati kondisi malai dan bulir sebelum menentukan waktu panen",
+      "Keringkan gabah segera setelah panen",
+      "Simpan gabah yang sudah cukup kering di tempat bersih"
+    ],
+    "cautions": [
+      "Waktu panen berbeda antar varietas, ikuti anjuran varietas",
+      "Hindari menjemur di tempat yang kotor atau tergenang"
+    ],
+    "refs": [
+      "Buku Budidaya Tanaman Padi (contoh referensi)",
+      "Panduan Pengelolaan Tanaman Terpadu (contoh referensi)"
+    ],
+    "body": "Penanganan setelah panen sama pentingnya dengan perawatan selama tanam."
+  },
+  {
+    "id": "mulsa-gulma",
+    "title": "Mengendalikan gulma dan memakai mulsa",
+    "category": "Hortikultura",
+    "keywords": [
+      "mulsa",
+      "gulma",
+      "rumput"
+    ],
+    "summary": "Gulma bersaing dengan tanaman untuk air, hara, dan cahaya, dan mulsa dapat membantu menekan gulma sekaligus menjaga kelembapan tanah.",
+    "label": "Hal yang perlu diperhatikan",
+    "points": [
+      "Gulma paling mudah dikendalikan saat masih kecil",
+      "Mulsa menekan pertumbuhan gulma dan menahan penguapan air",
+      "Gulma bisa menjadi inang hama dan penyakit"
+    ],
+    "actions": [
+      "Siangi secara rutin sebelum gulma berbunga",
+      "Pasang mulsa jerami atau plastik di bedengan",
+      "Bersihkan gulma di sekitar pematang"
+    ],
+    "cautions": [
+      "Bila memakai herbisida, ikuti label produk dan anjuran penyuluh",
+      "Prototipe ini tidak memberikan angka dosis"
+    ],
+    "refs": [
+      "Panduan Pengelolaan Tanaman Terpadu (contoh referensi)",
+      "Panduan Budidaya Hortikultura (contoh referensi)"
+    ],
+    "body": "Pengendalian gulma lebih ringan bila dilakukan sejak awal."
+  }
+]
