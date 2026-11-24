@@ -8,7 +8,7 @@ export default async function Pengaturan() {
       <div className="card max-w-xl mb-4">
         <h2 className="font-semibold mb-1">Status AI</h2>
         <p className="text-sm"><span className="tag mr-2">{st.mode === 'llm' ? `Mode: ${st.model}` : 'Mode: simulasi'}</span>{st.detail}</p>
-        <p className="text-xs text-stone mt-2">Untuk mengaktifkan SLM lokal, atur USE_LLM=true di file .env.local lalu jalankan ulang aplikasi.</p>
+        <p className="text-xs text-stone mt-2">Untuk mengaktifkan AI, atur USE_LLM=true beserta kunci provider (lihat .env.example), lalu jalankan ulang atau redeploy aplikasi.</p>
       </div>
       <SettingsPanel role="petani" />
     </div>

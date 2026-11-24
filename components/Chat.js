@@ -17,7 +17,7 @@ export default function Chat({ conversationId, initial, autoSend, status }) {
     setTxt(''); setErr(null); setBusy(true);
     setMsgs((x) => [...x, { role: 'user', text: m }]);
     try {
-      const r = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ conversationId: cid, message: m }) });
+      const r = await fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ conversationId: cid, message: m, history: msgs.slice(-6).map((x) => (x.role === 'user' ? { role: 'user', text: x.text } : { role: 'ai', summary: x.summary, topic: x.topic })) }) });
       if (!r.ok) throw new Error();
       const d = await r.json();
       setCid(d.conversationId); setMsgs((x) => [...x, d.message]);

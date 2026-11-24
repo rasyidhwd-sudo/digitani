@@ -9,7 +9,8 @@ export async function POST(req) {
   const mail = email.toLowerCase();
   if (users.some((u) => u.email === mail)) return NextResponse.json({ error: 'Email sudah terdaftar.' }, { status: 409 });
   const u = { id: 'u' + Date.now(), name: name.trim(), email: mail, role: 'petani', passwordHash: sha(password), location: (location || '').trim() || '-', commodities: [] };
-  users.push(u); await write('users', users);
+  users.push(u);
+  try { await write('users', users); } catch { return NextResponse.json({ error: 'Pendaftaran belum tersedia di versi online (penyimpanan data hanya-baca). Gunakan akun demo.' }, { status: 503 }); }
   const res = NextResponse.json({ ok: true });
   res.cookies.set('dt_user', makeToken(u.id), { httpOnly: true, sameSite: 'lax', path: '/', maxAge: 60 * 60 * 24 * 7 });
   return res;

@@ -8,11 +8,13 @@ const DOSE = /\d+([.,]\d+)?\s?(ml|gram|gr|g|kg|liter|l|cc|%|ppm|sendok)\b/i;
 export async function POST(req) {
   const user = await getUser();
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
-  const { conversationId, message, dryRun } = await req.json().catch(() => ({})); // dryRun: dipakai skrip uji, tidak menyimpan percakapan
+  const { conversationId, message, dryRun, history: clientHistory } = await req.json().catch(() => ({})); // dryRun: dipakai skrip uji, tidak menyimpan percakapan
   if (!message || !message.trim()) return NextResponse.json({ error: 'Pertanyaan kosong.' }, { status: 400 });
   const convs = await read('conversations');
   let c = convs.find((x) => x.id === conversationId && x.userId === user.id);
-  const prev = c ? c.messages : [];
+  // Bila penyimpanan hanya-baca (mis. Vercel), percakapan tidak tersimpan; konteks diambil dari riwayat yang dikirim klien.
+  const clean = (h) => (Array.isArray(h) ? h.slice(-6).map((m) => ({ role: m.role === 'user' ? 'user' : 'ai', text: String(m.text || '').slice(0, 500), summary: String(m.summary || '').slice(0, 500), topic: String(m.topic || '') })) : []);
+  const prev = c ? c.messages : clean(clientHistory);
   const lastTopic = [...prev].reverse().find((m) => m.role === 'ai' && m.topic && m.topic !== 'umum')?.topic;
   const history = prev.slice(-4).map((m) => (m.role === 'user' ? { role: 'user', content: m.text } : { role: 'assistant', content: m.summary || '' })).filter((m) => m.content);
   const r = await retrieve(message, lastTopic);
@@ -23,7 +25,7 @@ export async function POST(req) {
       out = await generate({ question: message, entries: r.entries, history });
       if (DOSE.test(JSON.stringify(out))) throw new Error('Jawaban memuat angka takaran');
       mode = 'llm';
-    } catch (err) { console.warn('[chat] SLM gagal, memakai mode simulasi:', err.message); }
+    } catch (err) { console.warn('[chat] AI gagal, memakai mode simulasi:', err.message); }
   }
   if (mode === 'simulasi') out = fromEntry(top);
   const refs = mode === 'llm' ? [...new Set(r.entries.flatMap((e) => e.refs))].slice(0, 3) : out.refs;
@@ -34,6 +36,6 @@ export async function POST(req) {
     convs.unshift(c);
   }
   c.messages.push({ role: 'user', text: message }, ai);
-  await write('conversations', convs);
+  try { await write('conversations', convs); } catch (err) { console.warn('[chat] riwayat tidak tersimpan (penyimpanan hanya-baca):', err.code || err.message); }
   return NextResponse.json({ conversationId: c.id, message: expand(ai, []) });
 }

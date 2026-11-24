@@ -25,7 +25,7 @@ export default function AnswerCard({ a }) {
         <b>Referensi</b> <span className="tag">Contoh ilustratif</span>
         <ul className="list-disc pl-5 mt-1">{a.refs.map((r) => <li key={r}>{r}</li>)}</ul>
       </div>
-      <p className="text-xs text-stone mt-2">{a.mode === 'llm' ? `Dibuat oleh model ${a.model} (lokal) dari basis pengetahuan contoh` : 'Mode simulasi: model AI belum terhubung, jawaban diambil langsung dari basis pengetahuan contoh'}{a.confidence ? ` · keyakinan perkiraan ${a.confidence}%` : ''}.</p>
+      <p className="text-xs text-stone mt-2">{a.mode === 'llm' ? `Dibuat oleh model ${a.model} (Google Gemini) dari basis pengetahuan contoh` : 'Mode simulasi: model AI belum terhubung, jawaban diambil langsung dari basis pengetahuan contoh'}{a.confidence ? ` · keyakinan perkiraan ${a.confidence}%` : ''}.</p>
       <p className="text-xs text-stone mt-1">Jawaban AI merupakan informasi awal. Periksa kondisi tanaman dan gunakan referensi yang tersedia sebelum mengambil keputusan.</p>
     </div>
   );

@@ -22,6 +22,6 @@ const csv = (v) => '"' + String(v ?? '').replace(/"/g, '""').replace(/\r?\n/g, '
   }
   fs.writeFileSync('eval/hasil.csv', '\ufeff' + rows.map((r) => r.map(csv).join(',')).join('\n'));
   console.log(`\nRetrieval benar: ${ok}/${qs.length} (${Math.round((ok / qs.length) * 100)}%)`);
-  console.log(`Jawaban dari SLM: ${llm}/${qs.length} | rata-rata waktu: ${(total / qs.length / 1000).toFixed(1)} detik`);
+  console.log(`Jawaban dari Gemini: ${llm}/${qs.length} | rata-rata waktu: ${(total / qs.length / 1000).toFixed(1)} detik`);
   console.log('Hasil lengkap: eval/hasil.csv (isi kolom nilai_manual: 0 salah, 1 sebagian, 2 benar)');
 })();
