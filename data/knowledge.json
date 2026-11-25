@@ -474,5 +474,387 @@
       "Panduan Budidaya Hortikultura (contoh referensi)"
     ],
     "body": "Pengendalian gulma lebih ringan bila dilakukan sejak awal."
+  },
+  {
+    "id": "pm-aas-ringkasan",
+    "title": "Apa itu PM-AAS dan tahapan budidaya padinya",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "pm-aas",
+      "pmaas",
+      "pertanian modern",
+      "advanced agricultural",
+      "budidaya padi modern",
+      "tahapan budidaya padi"
+    ],
+    "summary": "PM-AAS adalah sistem budidaya padi modern dari BRMP Kementan yang memakai teknologi, data, mekanisasi, dan pengelolaan presisi supaya hasil tinggi, biaya rendah, dan lingkungan tetap terjaga.",
+    "label": "Tujuh tahapan PM-AAS",
+    "points": [
+      "Persiapan lahan yang subur, rata, dan mudah diairi",
+      "Varietas unggul yang sesuai kondisi lahan",
+      "Tanam benih langsung (tabela) dengan pola tanam rapat",
+      "Pemupukan tepat jumlah, dosis, dan waktu",
+      "Pengairan berselang (AWD) atau intermiten",
+      "Pemantauan hama dan penyakit, dikendalikan secara terpadu",
+      "Panen tepat waktu saat 80-85% bulir menguning"
+    ],
+    "actions": [
+      "Ikuti tahapan secara berurutan, jangan melompati tahap persiapan lahan",
+      "Tanyakan ke chatbot per tahap, misalnya pemupukan atau pengairan, untuk detailnya"
+    ],
+    "cautions": [
+      "Dosis dan jadwal di buku saku adalah acuan umum, sesuaikan dengan kondisi lahan dan anjuran penyuluh setempat"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "PM-AAS (Pertanian Modern - Advanced Agricultural System) disusun BRMP Kementan sebagai panduan praktis budidaya padi yang produktif, efisien, dan berkelanjutan. Tahapannya berurutan dari persiapan lahan sampai panen."
+  },
+  {
+    "id": "pm-aas-lahan",
+    "title": "Persiapan lahan sawah menurut PM-AAS",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "persiapan lahan",
+      "olah tanah",
+      "pengolahan tanah",
+      "siapkan lahan",
+      "dolomit",
+      "keong mas",
+      "macak-macak"
+    ],
+    "summary": "Lahan yang baik untuk PM-AAS subur, rata, mudah diairi, diolah dua kali, dan tanahnya macak-macak (lembab, tidak becek) saat tanam.",
+    "label": "Tahapan persiapan lahan",
+    "points": [
+      "Pilih lahan yang subur, rata, dan mudah diairi (irigasi teknis)",
+      "Genangi 2-5 cm selama 2-3 hari, lalu olah tanah pertama dan perbaiki pematang",
+      "Beri pupuk organik (kompos jerami atau kotoran hewan, sebaiknya dari sumber setempat) dan dolomit sesuai pH tanah",
+      "Genangi lagi 2-3 cm, olah tanah kedua sekitar 1 minggu kemudian, lalu ratakan",
+      "Herbisida pra-tumbuh 3-5 hari sebelum tanam sesuai anjuran",
+      "Saat tanam, tanah macak-macak dan melumpur sempurna; bersihkan saluran air dan kendalikan keong"
+    ],
+    "actions": [
+      "Pastikan lahan rata dan tidak miring, air cukup, pematang kuat",
+      "Buat drainase supaya tidak ada genangan saat tanam",
+      "Kendalikan keong sebelum tanam"
+    ],
+    "cautions": [
+      "Air menggenang membuat akar mudah busuk dan bibit mudah rebah; tanah terlalu kering membuat perkecambahan terganggu",
+      "Gunakan herbisida sesuai label dan anjuran"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Persiapan lahan yang baik menentukan hasil. Pastikan tanah lembab dan gembur, tidak becek, dan bersih dari gulma sebelum tanam."
+  },
+  {
+    "id": "pm-aas-varietas",
+    "title": "Memilih varietas padi unggul untuk PM-AAS",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "varietas padi",
+      "varietas unggul",
+      "vub",
+      "inpari",
+      "inpago",
+      "padjadjaran",
+      "cakrabuana",
+      "pilih varietas",
+      "potensi hasil"
+    ],
+    "summary": "Pilih varietas yang malainya lebat, batangnya kokoh, tahan rebah, tahan HDB dan blas, serta potensi hasilnya di atas 10 ton per hektare dan cocok dengan tipe lahan.",
+    "label": "Kriteria dan contoh varietas",
+    "points": [
+      "Kriteria: malai lebat, batang kokoh, perakaran kuat, tahan rebah, tahan HDB, tahan blas",
+      "Kemampuan berkecambah saat tergenang (anaerobic germination tolerance) penting untuk tabela",
+      "Contoh potensi hasil tinggi: Padjadjaran 11,0 t/ha; Inpari 42 GSR 10,58 t/ha; Inpago 12 Agritan dan Cakrabuana 10,2 t/ha",
+      "Contoh tahan HDB: Inpari 32 HDB, Mantap, Inpari VTE 13; tahan wereng (WBC): Inpari 33; tahan blas: Inpari 50 Marem",
+      "Contoh tahan kering: Cisaat; Inpago 13 Fortiz untuk sawah dan gogo"
+    ],
+    "actions": [
+      "Cocokkan varietas dengan tipe lahan: sawah, tadah hujan, gogo, atau rawa pasang surut",
+      "Tanyakan ke penyuluh varietas apa yang cocok dan tersedia di wilayah Anda"
+    ],
+    "cautions": [
+      "Potensi hasil adalah angka uji, hasil di lahan petani bisa berbeda",
+      "Ketahanan varietas bisa menurun seiring waktu karena patogen berubah, jadi cek rekomendasi terbaru"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Buku saku PM-AAS memuat daftar varietas beserta potensi hasil, keunggulan, dan tipe lahan yang cocok. Pilih berdasarkan masalah utama di lahan Anda, misalnya HDB, blas, atau rebah."
+  },
+  {
+    "id": "pm-aas-tabela",
+    "title": "Tanam benih langsung (tabela) dan tanam rapat 4:1 atau 6:1",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "tabela",
+      "tanam benih langsung",
+      "tanam rapat",
+      "jajar legowo",
+      "legowo",
+      "larikan",
+      "4:1",
+      "6:1",
+      "melentis",
+      "perlakuan benih"
+    ],
+    "summary": "Tabela menanam benih langsung tanpa persemaian untuk menghemat waktu, biaya, dan tenaga; benih direndam, diperam sampai melentis, lalu ditanam dengan pola larikan rapat.",
+    "label": "Persiapan dan pola tanam",
+    "points": [
+      "Tidak ada hujan sekitar 5 hari pertama setelah tanam, supaya benih tidak hanyut",
+      "Benih bermutu: daya kecambah minimal 80%, bersih, bebas hama dan penyakit, varietas sesuai lokasi",
+      "Alur benih: rendam 12 jam, peram 12 jam, sampai melentis (radikula sekitar 1 mm), perlakuan benih, lalu tanam",
+      "Benih yang sudah diperam sebaiknya segera ditanam (kurang dari 24 jam setelah melentis)",
+      "Pola 4:1 atau 6:1: jarak antar baris rapat 25 cm, jarak legowo 50 cm, jarak antar lubang dalam baris 3 cm",
+      "Saat tanam, tanah macak-macak, bebas genangan, gulma terkendali"
+    ],
+    "actions": [
+      "Siapkan benih dan lahan sebelum merendam benih supaya bisa langsung tanam",
+      "Pilih pola 4:1 atau 6:1 sesuai alat dan luas lahan"
+    ],
+    "cautions": [
+      "Perlakuan benih (misalnya terhadap blas atau serangan burung) hanya pakai pestisida yang terdaftar dan diizinkan Kementan, dosis sesuai label",
+      "Tanam rapat menambah populasi tanaman, jadi perhatikan kebutuhan air, nutrisi, dan pengendalian hama penyakit"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Tabela cocok untuk lahan sempit secara manual maupun lahan luas dengan alat. Persiapan benih dan lahan yang baik adalah kunci hasil."
+  },
+  {
+    "id": "pm-aas-pemupukan",
+    "title": "Kalender pemupukan padi menurut PM-AAS",
+    "category": "Pemupukan",
+    "keywords": [
+      "pemupukan padi",
+      "pupuk padi",
+      "pupuk urea",
+      "urea padi",
+      "kasih pupuk",
+      "kapan pupuk",
+      "pupuk susulan",
+      "jadwal pupuk",
+      "kalender pemupukan",
+      "urea",
+      "sp-36",
+      "sp36",
+      "npk",
+      "pupuk silika",
+      "silika",
+      "bagan warna daun",
+      "bwd",
+      "zpt"
+    ],
+    "summary": "PM-AAS memberi kalender pemupukan acuan umum: organik saat olah tanah, silika berkala, NPK dan SP-36 awal, NPK dan urea kedua, lalu urea susulan di fase primordia.",
+    "label": "Jadwal pemupukan (acuan umum)",
+    "points": [
+      "Olah tanah: pupuk organik minimal 2 ton/ha, ditabur merata",
+      "15, 25, 35, dan 55 HST: pupuk silika cair minimal 0,75 L/ha (SiO2 minimal 10%) disemprot ke seluruh tanaman, atau padat sesuai anjuran produk",
+      "20-25 HST: NPK majemuk 300 kg/ha; SP-36 opsional sesuai status P tanah (rendah 100, sedang 75, tinggi 50 kg/ha)",
+      "40-45 HST: NPK majemuk kedua 100 kg/ha ditambah urea 150 kg/ha",
+      "Fase primordia (inisiasi malai): urea susulan 150 kg/ha atau sesuai pembacaan Bagan Warna Daun (BWD)",
+      "Booster atau ZPT: auksin dan sitokinin saat vegetatif, giberelin saat generatif"
+    ],
+    "actions": [
+      "Cek status hara P tanah (uji tanah) sebelum menentukan dosis SP-36",
+      "Gunakan BWD untuk menentukan kebutuhan urea susulan",
+      "Taburkan pupuk merata di sekitar tanaman"
+    ],
+    "cautions": [
+      "Ini acuan umum, dosis akhir sebaiknya mengikuti rekomendasi setempat dan hasil uji tanah",
+      "Konsultasikan ke penyuluh sebelum mengubah dosis, terutama bila tanaman sudah menunjukkan gejala"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Pemupukan tepat dosis dan waktu membuat tanaman sehat dan hasil optimal. Silika diberikan berkala untuk memperkuat batang, daun, dan ketahanan terhadap hama penyakit."
+  },
+  {
+    "id": "pm-aas-awd",
+    "title": "Pengairan berselang (AWD) pada padi",
+    "category": "Irigasi",
+    "keywords": [
+      "awd",
+      "alternate wetting",
+      "pengairan berselang",
+      "intermiten",
+      "intermittent",
+      "tabung awd",
+      "pipa paralon",
+      "hemat air"
+    ],
+    "summary": "AWD mengairi sawah lalu membiarkannya mengering sampai air turun sekitar 15 cm (tanah liat atau lempung) atau 5 cm (tanah berpasir) di bawah permukaan, baru diairi lagi.",
+    "label": "Cara kerja AWD",
+    "points": [
+      "Pantau dengan tabung berlubang dari pipa paralon diameter 10-15 cm, bagian berlubang dimulai dari 15 cm di bawah permukaan tanah",
+      "Rambu hijau berarti tergenang, kuning berarti air mulai surut, merah berarti air turun lebih dari 15 cm sehingga harus diairi",
+      "Pola umum: macak-macak saat tanam, genangan 3-5 cm saat vegetatif, tergenang saat inisiasi sampai pengisian malai, keringkan sekitar 10 hari sebelum panen",
+      "Manfaat: hemat air irigasi sekitar 20-30%, hemat biaya dan tenaga, akar lebih kuat dan tanaman lebih tahan stres"
+    ],
+    "actions": [
+      "Pasang tabung AWD di beberapa titik petak",
+      "Lakukan bertahap sesuai fase tumbuh dan sesuaikan dengan cuaca dan jenis tanah"
+    ],
+    "cautions": [
+      "Hindari kekeringan berlebihan terutama di fase sensitif: inisiasi malai sampai berbunga",
+      "Pantau rutin, jangan dibiarkan kering lebih dalam dari batas yang dianjurkan"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "AWD (Alternate Wetting Drying) atau irigasi intermiten membuat sawah bergantian kering dan tergenang, sehingga air lebih hemat tanpa mengorbankan hasil jika dijalankan sesuai fase."
+  },
+  {
+    "id": "pm-aas-ambang-opt",
+    "title": "Memantau hama dan penyakit padi dengan ambang ekonomi",
+    "category": "Hama dan Penyakit",
+    "keywords": [
+      "ambang ekonomi",
+      "ambang kendali",
+      "wereng",
+      "wereng cokelat",
+      "penggerek batang",
+      "sundep",
+      "keong mas",
+      "pemantauan hama",
+      "opt padi",
+      "pengamatan rutin"
+    ],
+    "summary": "Pengendalian hama dan penyakit padi sebaiknya berdasar pemantauan rutin dan baru dilakukan saat populasi atau serangan mencapai ambang ekonomi, dengan pestisida sebagai pilihan terakhir.",
+    "label": "Ambang serangan untuk beberapa hama utama",
+    "points": [
+      "Tikus: lebih dari 10% rumpun rusak atau ada tanda serangan aktif",
+      "Wereng cokelat: lebih dari 3 ekor per rumpun atau intensitas serangan lebih dari 10%",
+      "Penggerek batang: lebih dari 5 rumpun terserang (gejala sundep atau beluk)",
+      "Keong mas: lebih dari 3 ekor per rumpun atau lebih dari 5% tanaman terserang",
+      "HDB: lebih dari 5% daun terserang; blas: lebih dari 10% daun terserang"
+    ],
+    "actions": [
+      "Amati minimal 1 kali seminggu, minimal 10 titik secara zig-zag per petak",
+      "Catat jenis hama, jumlah populasi, dan luas serangan",
+      "Bila belum mencapai ambang, pantau lagi 3-7 hari; bila sudah, kendalikan terpadu: budidaya dan musuh alami dulu"
+    ],
+    "cautions": [
+      "Pestisida adalah pilihan terakhir; pakai yang terdaftar, sesuai label dan dosis, dan pakai alat pelindung diri",
+      "Rotasi bahan aktif supaya tidak muncul resistensi, dan jangan semprot saat angin kencang",
+      "Jenis bahan aktif dan dosis lengkap ada di Buku Saku PM-AAS atau tanyakan ke penyuluh"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Prinsipnya: kenali hama, pantau populasi, tindak tepat. Pengendalian berdasar ambang ekonomi mencegah kehilangan hasil, menghemat biaya, dan menjaga musuh alami."
+  },
+  {
+    "id": "hdb-padi-kresek",
+    "title": "Hawar daun bakteri (HDB / kresek) pada padi",
+    "category": "Hama dan Penyakit",
+    "keywords": [
+      "hdb",
+      "penyakit hdb",
+      "mengatasi hdb",
+      "hdb padi",
+      "hawar daun bakteri",
+      "hawar daun",
+      "kresek",
+      "xanthomonas",
+      "xoo",
+      "patotipe",
+      "bakteri padi",
+      "daun mengering dari ujung"
+    ],
+    "summary": "HDB disebabkan bakteri Xanthomonas oryzae pv. oryzae dan dapat menurunkan hasil 15-80% tergantung fase tanaman saat serangan; cara paling efektif dan mudah adalah menanam varietas tahan.",
+    "label": "Yang perlu diketahui tentang HDB",
+    "points": [
+      "Gejala: pada tanaman muda berupa layu (kresek); pada fase anakan, berbunga, dan pemasakan berupa hawar; bercak keputihan memanjang dari ujung daun lalu berubah cokelat dan mengering",
+      "Bakteri juga dapat menular lewat benih karena merusak malai dan gabah",
+      "Di sentra padi Jawa, patotipe dominan adalah III, IV, dan VIII; patotipe VIII paling dominan (sekitar 60%) dan patotipe IV paling virulen",
+      "Ambang kerusakan sekitar 20-30% dua minggu sebelum panen; di atas itu kehilangan hasil naik 5-7% setiap keparahan naik 10%"
+    ],
+    "actions": [
+      "Tanam varietas tahan HDB dan pergilirkan varietas antar musim",
+      "Pantau rutin; ambang tindakan di PM-AAS adalah lebih dari 5% daun terserang",
+      "Gunakan benih sehat dan bersih; foto gejala dan tanyakan ke penyuluh"
+    ],
+    "cautions": [
+      "Hasil uji jurnal (2010, rumah kasa Sukamandi) menunjukkan ketahanan varietas bisa patah ketika patotipe bakteri berubah, jadi cek rekomendasi varietas terbaru",
+      "Pada uji tersebut Ciherang agak rentan terhadap patotipe III dan rentan terhadap IV dan VIII; Inpari 1 sangat rentan terhadap patotipe IV",
+      "Varietas lokal Ketan Garut, Pandan Wangi, Remaja, dan Gembang menunjukkan ketahanan berspektrum luas pada uji itu, tapi belum tentu cocok untuk semua lahan"
+    ],
+    "refs": [
+      "Susanto & Sudir (2012), Jurnal Penelitian Pertanian Tanaman Pangan 31(2): 108-116",
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Penanaman varietas tahan adalah cara pengendalian HDB yang efektif dan mudah. Karena bakteri dapat membentuk patotipe baru, pergiliran varietas dan pemantauan berkala perlu dilakukan. Contoh varietas yang disebut tahan HDB di Buku Saku PM-AAS: Inpari 32 HDB, Mantap, dan Inpari VTE 13."
+  },
+  {
+    "id": "padi-rebah-silika",
+    "title": "Mencegah padi rebah dan memperkuat batang",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "rebah",
+      "padi rebah",
+      "roboh",
+      "batang lemah",
+      "batang kokoh",
+      "jerami",
+      "biochar"
+    ],
+    "summary": "Padi rebah dicegah dengan varietas berbatang kokoh, perakaran kuat, pupuk silika berkala, pengembalian jerami, dan pengairan AWD.",
+    "label": "Cara memperkuat tanaman",
+    "points": [
+      "Pakai varietas berbatang kokoh, perakaran kuat, dan tahan HDB",
+      "Aplikasi pupuk silika cair berkala sesuai kalender pemupukan PM-AAS",
+      "Jerami kaya silika: kembalikan ke lahan dan biarkan terurai di tempat, atau olah menjadi biochar",
+      "Gunakan pengairan AWD untuk memperkuat akar dan batang"
+    ],
+    "actions": [
+      "Pilih varietas tahan rebah, terutama untuk musim hujan",
+      "Keringkan sawah sesuai pola AWD, termasuk pengeringan sekitar 10 hari sebelum panen"
+    ],
+    "cautions": [
+      "Hindari kekeringan berlebihan di fase inisiasi malai sampai berbunga"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Akar sehat menopang tanaman lebih kokoh. Pencegahan rebah menghasilkan panen yang lebih berkualitas dan berlimpah."
+  },
+  {
+    "id": "pm-aas-panen",
+    "title": "Panen padi dengan mesin dan penanganan gabah",
+    "category": "Tanaman Pangan",
+    "keywords": [
+      "combine harvester",
+      "panen mesin",
+      "panen padi",
+      "kadar air gabah",
+      "masak fisiologis",
+      "pasca panen",
+      "pascapanen",
+      "mengeringkan gabah",
+      "simpan gabah"
+    ],
+    "summary": "Panen paling tepat saat 80-85% bulir menguning dengan kadar air gabah 19-24%; setelah panen, gabah segera dikeringkan sampai kadar air sekitar 14%.",
+    "label": "Waktu dan cara panen",
+    "points": [
+      "Ciri siap panen: 80-85% bulir sudah kuning, gabah keras bila ditekan kuku, daun bendera mulai menguning dan mengering",
+      "Terlalu awal: banyak gabah hijau, hasil rendah. Terlalu lambat: gabah mudah rontok dan mutu turun",
+      "Combine harvester: kecepatan sekitar 2,5-4,5 mph, tinggi potong 10-15 cm",
+      "Setelah panen: keringkan gabah sampai kadar air 14%, simpan di tempat bersih, kering, dan sejuk"
+    ],
+    "actions": [
+      "Keringkan air sawah sekitar 10 hari sebelum panen",
+      "Pakai alas terpal atau anyaman, bersihkan gabah dari kotoran sebelum disimpan atau dijual"
+    ],
+    "cautions": [
+      "Jangan panen saat kadar air di atas 24% atau kematangan sudah lewat 85%",
+      "Jangan biarkan gabah basah terlalu lama setelah panen"
+    ],
+    "refs": [
+      "Buku Saku PM-AAS, BRMP Kementerian Pertanian (2026)"
+    ],
+    "body": "Panen tepat waktu dan tepat cara menentukan hasil dan mutu gabah. Pemotongan terlalu rendah (kurang dari 10 cm) membuat jerami terlalu banyak masuk ke mesin."
   }
 ]
