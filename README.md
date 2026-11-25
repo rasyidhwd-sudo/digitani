@@ -1,4 +1,4 @@
-# DigiTani — Prototipe Web (Next.js 14 + Tailwind + JSON + Google Gemini)
+# DigiTani — Prototipe Web (Next.js 14 + Tailwind + MongoDB + Google Gemini)
 
 Asisten pertanian berbasis AI untuk IPB DigiTani. AI menjawab langsung ke petani dengan pendekatan
 **RAG**: pertanyaan dicocokkan ke basis pengetahuan (`data/knowledge.json`, 15 topik), lalu (opsional)
@@ -31,19 +31,40 @@ Tanpa pengaturan, aplikasi memakai **mode simulasi**. Untuk memakai Gemini:
 
 Kalau AI gagal (key salah, kuota habis, jawaban diblokir, jaringan putus), aplikasi otomatis kembali ke mode simulasi.
 
-## 2b. Deploy ke Vercel
+## 2b. Database (MongoDB)
+Akun dan riwayat percakapan disimpan di MongoDB bila `MONGODB_URI` diisi. Kalau kosong, aplikasi memakai file JSON
+di folder `data/` (praktis untuk lokal, tetapi tidak permanen di Vercel). Basis pengetahuan (`knowledge.json`)
+tetap berupa file karena isinya statis dan ikut versi kode.
+
+Menyiapkan MongoDB Atlas (cloud):
+1. Buat akun dan sebuah cluster di mongodb.com/atlas (ada pilihan cluster gratis; cek batasnya di situs mereka).
+2. **Database Access**: buat user database dengan password kuat (hindari karakter khusus, atau URL-encode
+   passwordnya di connection string).
+3. **Network Access**: untuk Vercel, alamat IP-nya berubah-ubah, jadi biasanya perlu mengizinkan `0.0.0.0/0`.
+   Karena itu pakai password yang kuat dan jangan isi data sensitif di prototipe ini.
+4. Klik **Connect > Drivers**, salin connection string, ganti `<password>` dengan password user tadi.
+5. Isi `MONGODB_URI` (di `.env.local` atau Vercel) dengan string itu. `MONGODB_DB` opsional (default `digitani`).
+
+Saat pertama terhubung ke database yang masih kosong, aplikasi membuat indeks dan mengisi data awal (akun demo
+`budi@digitani.test` / `tani12345` dan 3 contoh percakapan). Setelah itu data awal tidak diisi ulang.
+Koleksi: `users`, `conversations`. Kata sandi disimpan sebagai hash scrypt + salt.
+
+Cek koneksi: buka `/api/health` di browser, atau halaman Pengaturan.
+
+## 2c. Deploy ke Vercel
 Settings > Environment Variables, lalu **Redeploy** setelah menyimpan:
 
 | Nama | Nilai | Tipe |
 |---|---|---|
+| `MONGODB_URI` | connection string Atlas | **Secret** |
+| `MONGODB_DB` | `digitani` (opsional) | Config |
 | `USE_LLM` | `true` | Config |
 | `GEMINI_MODEL` | nama model Gemini | Config |
 | `GEMINI_API_KEY` | key dari Google AI Studio | **Secret** |
 | `AUTH_SECRET` | string acak panjang | **Secret** |
 
-Jangan commit key ke GitHub, jangan beri awalan `NEXT_PUBLIC_`, dan jangan tampilkan key di screenshot.
-Batasan di Vercel: penyimpanan hanya-baca. Login akun demo tetap jalan, tetapi Daftar akun baru dan riwayat
-percakapan **tidak tersimpan permanen**. Untuk itu perlu database online (mis. PostgreSQL).
+Jangan commit key/URI ke GitHub, jangan beri awalan `NEXT_PUBLIC_`, dan jangan tampilkan nilainya di screenshot.
+Setelah deploy, buka `/api/health`: `db.mode` harus `mongo` dan `ai.mode` harus `llm`.
 
 ## 3. Alur satu pertanyaan (`app/api/chat/route.js`)
 1. `lib/rag.js > retrieve()`: skor kata kunci mencari 1-2 topik paling relevan (ambang minimum skor 3,
@@ -68,10 +89,10 @@ kata kunci, jadi hasil 100% di sana belum berarti sebaik itu untuk pertanyaan pe
 ## 5. Struktur
 ```
 app/            landing, login, daftar, (app)/ dashboard konsultasi riwayat pengetahuan profil pengaturan
-app/api/        auth/login|logout|register, chat, conversations (DELETE)
+app/api/        auth/login|logout|register, chat, conversations (DELETE), health
 components/     Sidebar, Chat, AnswerCard, SettingsPanel, Prefs
-lib/            db.js (JSON), auth.js, rag.js (retrieval), llm.js (Gemini + status), format.js
-data/           users.json, knowledge.json, conversations.json
+lib/            db.js (MongoDB/JSON), password.js, auth.js, rag.js (retrieval), llm.js (Gemini + status), format.js
+data/           knowledge.json (basis pengetahuan) + data awal users.json, conversations.json
 eval/ scripts/  questions.json dan skrip uji
 ```
 
@@ -79,6 +100,6 @@ eval/ scripts/  questions.json dan skrip uji
 - Rencana kelompok di LKP 6: React + Flask + PostgreSQL. Di prototipe ini API route Next.js berperan sebagai
   backend dan JSON sebagai database. Komunikasi ke model hanya ada di `lib/llm.js`.
 - Jalur Gemini diuji dengan server tiruan berformat API Gemini, belum dengan layanan aslinya. Cobalah dulu dengan key Anda.
-- JSON sebagai database hanya cocok untuk lokal. Produksi: PostgreSQL dan bcrypt (sekarang SHA-256 tanpa salt).
+- Fallback JSON hanya cocok untuk lokal.
 - Retrieval masih kata kunci. Langkah berikutnya: embedding multibahasa + vector search atas korpus asli.
 - Belum ada: panel admin untuk basis pengetahuan, dark mode, streaming jawaban.

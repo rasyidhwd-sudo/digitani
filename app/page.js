@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { Leaf, MessageCircle, BookOpen, Search, Clock } from 'lucide-react';
-import { read } from '@/lib/db';
+import { getKnowledge } from '@/lib/db';
 const CATS = ['Hama dan Penyakit', 'Tanaman Pangan', 'Hortikultura', 'Pemupukan', 'Irigasi', 'Kesehatan Tanah'];
 const FEAT = [[MessageCircle, 'AI Agriculture Assistant', 'Tanya apa saja dan dapatkan jawaban terstruktur.'], [BookOpen, 'Basis Pengetahuan Pertanian', 'Rencana: buku, jurnal, dan panduan tepercaya.'], [Search, 'Referensi Ilmiah', 'Setiap jawaban disertai sumber yang bisa ditelusuri.'], [Clock, 'Riwayat Konsultasi', 'Buka kembali pertanyaan dan jawaban sebelumnya.']];
 const STEPS = ['Petani mengirim pertanyaan', 'AI mencari pengetahuan pertanian yang relevan', 'AI menyusun jawaban beserta referensi', 'Petani meninjau jawaban dan sumbernya'];
 export const dynamic = 'force-dynamic';
 export default async function Landing() {
-  const kb = await read('knowledge');
+  const kb = await getKnowledge();
   return (
     <>
       <header className="sticky top-0 z-20 bg-white border-b border-line">

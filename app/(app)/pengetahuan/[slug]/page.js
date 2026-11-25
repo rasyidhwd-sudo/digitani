@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { read } from '@/lib/db';
+import { getKnowledge } from '@/lib/db';
 export default async function Artikel({ params }) {
-  const a = (await read('knowledge')).find((x) => x.id === params.slug);
+  const a = (await getKnowledge()).find((x) => x.id === params.slug);
   if (!a) notFound();
   return (
     <article className="max-w-2xl">

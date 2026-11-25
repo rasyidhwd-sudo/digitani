@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { read, write } from '@/lib/db';
+import { getConversation, saveConversation } from '@/lib/db';
 import { getUser } from '@/lib/auth';
 import { retrieve, confidence, fromEntry, expand, GENERIC } from '@/lib/rag';
 import { generate, llmEnabled, MODEL } from '@/lib/llm';
@@ -10,9 +10,9 @@ export async function POST(req) {
   if (!user) return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   const { conversationId, message, dryRun, history: clientHistory } = await req.json().catch(() => ({})); // dryRun: dipakai skrip uji, tidak menyimpan percakapan
   if (!message || !message.trim()) return NextResponse.json({ error: 'Pertanyaan kosong.' }, { status: 400 });
-  const convs = await read('conversations');
-  let c = convs.find((x) => x.id === conversationId && x.userId === user.id);
-  // Bila penyimpanan hanya-baca (mis. Vercel), percakapan tidak tersimpan; konteks diambil dari riwayat yang dikirim klien.
+  let c = null;
+  try { c = conversationId ? await getConversation(conversationId, user.id) : null; } catch (err) { console.warn('[chat] gagal membaca percakapan:', err.message); }
+  // Bila percakapan tidak ditemukan atau penyimpanan bermasalah, konteks diambil dari riwayat yang dikirim klien.
   const clean = (h) => (Array.isArray(h) ? h.slice(-6).map((m) => ({ role: m.role === 'user' ? 'user' : 'ai', text: String(m.text || '').slice(0, 500), summary: String(m.summary || '').slice(0, 500), topic: String(m.topic || '') })) : []);
   const prev = c ? c.messages : clean(clientHistory);
   const lastTopic = [...prev].reverse().find((m) => m.role === 'ai' && m.topic && m.topic !== 'umum')?.topic;
@@ -33,9 +33,8 @@ export async function POST(req) {
   if (dryRun === true) return NextResponse.json({ message: expand(ai, []) });
   if (!c) {
     c = { id: 'c' + Date.now(), userId: user.id, title: message.slice(0, 70), category: top ? top.category : 'Umum', status: 'Berlangsung', date: new Date().toISOString(), messages: [] };
-    convs.unshift(c);
   }
   c.messages.push({ role: 'user', text: message }, ai);
-  try { await write('conversations', convs); } catch (err) { console.warn('[chat] riwayat tidak tersimpan (penyimpanan hanya-baca):', err.code || err.message); }
+  try { await saveConversation(c); } catch (err) { console.warn('[chat] riwayat tidak tersimpan:', err.code || err.message); }
   return NextResponse.json({ conversationId: c.id, message: expand(ai, []) });
 }

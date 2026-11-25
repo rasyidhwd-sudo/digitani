@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { MessageCircle } from 'lucide-react';
-import { read } from '@/lib/db';
+import { listConversations, getKnowledge } from '@/lib/db';
 import { getUser } from '@/lib/auth';
 import { fmt } from '@/lib/format';
 export default async function Dashboard() {
   const user = await getUser();
-  const mine = (await read('conversations')).filter((c) => c.userId === user.id);
-  const kb = await read('knowledge');
+  const mine = await listConversations(user.id);
+  const kb = await getKnowledge();
   const now = new Date();
   const thisMonth = mine.filter((c) => { const d = new Date(c.date); return d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear(); }).length;
   const tally = {}; mine.forEach((c) => (tally[c.category] = (tally[c.category] || 0) + 1));

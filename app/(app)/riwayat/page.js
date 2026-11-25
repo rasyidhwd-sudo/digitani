@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { read } from '@/lib/db';
+import { listConversations } from '@/lib/db';
 import { getUser } from '@/lib/auth';
 import { fmt } from '@/lib/format';
 const CATS = ['Hama dan Penyakit', 'Tanaman Pangan', 'Hortikultura', 'Pemupukan', 'Irigasi', 'Kesehatan Tanah'];
 export default async function Riwayat({ searchParams }) {
   const user = await getUser();
   const q = (searchParams.q || '').toLowerCase(), cat = searchParams.cat || '';
-  const all = (await read('conversations')).filter((c) => c.userId === user.id);
+  const all = await listConversations(user.id);
   const list = all.filter((c) => (!cat || c.category === cat) && c.title.toLowerCase().includes(q));
   const href = (c) => `/riwayat?cat=${encodeURIComponent(c)}${searchParams.q ? `&q=${encodeURIComponent(searchParams.q)}` : ''}`;
   return (

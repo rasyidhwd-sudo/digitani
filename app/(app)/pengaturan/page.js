@@ -1,7 +1,9 @@
 import SettingsPanel from '@/components/SettingsPanel';
 import { llmStatus } from '@/lib/llm';
+import { dbStatus } from '@/lib/db';
 export default async function Pengaturan() {
   const st = await llmStatus();
+  const db = await dbStatus();
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">Pengaturan</h1>
@@ -9,6 +11,10 @@ export default async function Pengaturan() {
         <h2 className="font-semibold mb-1">Status AI</h2>
         <p className="text-sm"><span className="tag mr-2">{st.mode === 'llm' ? `Mode: ${st.model}` : 'Mode: simulasi'}</span>{st.detail}</p>
         <p className="text-xs text-stone mt-2">Untuk mengaktifkan AI, atur USE_LLM=true beserta kunci provider (lihat .env.example), lalu jalankan ulang atau redeploy aplikasi.</p>
+      </div>
+      <div className="card max-w-xl mb-4">
+        <h2 className="font-semibold mb-1">Status database</h2>
+        <p className="text-sm"><span className="tag mr-2">{db.mode === 'mongo' ? 'MongoDB' : db.mode === 'json' ? 'JSON lokal' : 'Error'}</span>{db.detail}</p>
       </div>
       <SettingsPanel role="petani" />
     </div>

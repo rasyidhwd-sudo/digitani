@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { read } from '@/lib/db';
+import { getKnowledge } from '@/lib/db';
 const CATS = ['Hama dan Penyakit', 'Tanaman Pangan', 'Hortikultura', 'Pemupukan', 'Irigasi', 'Kesehatan Tanah'];
 export default async function Pengetahuan({ searchParams }) {
   const q = (searchParams.q || '').toLowerCase(), cat = searchParams.cat || '';
-  const list = (await read('knowledge')).filter((a) => (!cat || a.category === cat) && (a.title + a.summary).toLowerCase().includes(q));
+  const list = (await getKnowledge()).filter((a) => (!cat || a.category === cat) && (a.title + a.summary).toLowerCase().includes(q));
   return (
     <div>
       <h1 className="text-2xl font-bold">Pusat Pengetahuan Pertanian</h1>

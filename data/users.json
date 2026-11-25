@@ -4,7 +4,7 @@
     "name": "Budi Santoso",
     "email": "budi@digitani.test",
     "role": "petani",
-    "passwordHash": "a53070a2285ebe286abaf9551fdc8b991944818a30153ededb77d58a9b6ed628",
+    "passwordHash": "scrypt$b4b996672d39ac427a918297b55e2691$896cfda46cd7a986d7fa77eeb61caebe445268657fabadec133514b36f670cbc2a332c55760bd226d43ff1f7dcafae900ab929378fe4fed2b8195ce0c2c77504",
     "location": "Sragen, Jawa Tengah",
     "commodities": [
       "Padi",
